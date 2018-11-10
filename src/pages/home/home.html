@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content  style="background-color:#000000;" padding>
-  <div style="isplay:flex; height: 100%; flex-direction: column;" >
-          <div class="backgroundDiv">
+  <div class="backgroundDiv" style="isplay:flex; height: 100%; flex-direction: column;" >
+
             <div class="image">
               <img [ngStyle]="{'left':'50%', 'top':'100px', 'margin-left':'-50px', 'height':'100px'}"  src="assets/imgs/logo.png" alt="" />
               <h1 color="secondary">Welcome to VidaKit</h1>
@@ -20,8 +20,6 @@
               <button ion-button secondary (click)="loadMission()">Go to Mission</button>
               <button ion-button primary (click)="loadBasicKit()">Go to Basic Kit</button>
             </div>
-          </div>
-
     </div>
 
 </ion-content>
