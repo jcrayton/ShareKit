@@ -2,7 +2,11 @@ page-mission {
   img {align-self: center;}
   ion-title {text-align:center;}
   h2 {text-align:center;}
-  p {text-align:center;}
+  p {
+    text-align:left;
+    line-height: 1.5;
+    margin:0px 100px 0px 100px;
+  }
   img{
     position:absolute;
   }

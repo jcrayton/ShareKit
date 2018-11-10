@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MissionPage } from '../mission/mission';
 import { BasicKit } from '../basic-kit/basic-kit';
 import { FrequencyPage } from '../frequency/frequency';
 import { HomePage } from '../home/home';
