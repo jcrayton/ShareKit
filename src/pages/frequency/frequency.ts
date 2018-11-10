@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+
 @Component({
-  selector: 'page-mission',
-  templateUrl: 'mission.html'
+  selector: 'page-frequency',
+  templateUrl: 'frequency.html'
 })
-export class MissionPage {
+export class FrequencyPage {
 
   constructor(public navCtrl: NavController) {
 
   }
-
 }

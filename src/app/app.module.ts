@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MissionPage } from '../pages/mission/mission';
 import { BasicKit } from '../pages/basic-kit/basic-kit';
+import { FrequencyPage } from '../pages/frequency/frequency';
 
 
 
@@ -16,7 +17,8 @@ import { BasicKit } from '../pages/basic-kit/basic-kit';
     MyApp,
     HomePage,
     MissionPage,
-    BasicKit
+    BasicKit,
+    FrequencyPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { BasicKit } from '../pages/basic-kit/basic-kit';
     MyApp,
     HomePage,
     MissionPage,
-    BasicKit
+    BasicKit,
+    FrequencyPage
   ],
   providers: [
     StatusBar,
