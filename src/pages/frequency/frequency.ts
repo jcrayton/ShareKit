@@ -1,3 +1,4 @@
+
 import { Component, ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -12,6 +13,4 @@ export class FrequencyPage {
 
   constructor(public navCtrl: NavController) {
   }
-
-
 }
