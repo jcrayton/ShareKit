@@ -12,7 +12,8 @@ import { MissionPage } from '../pages/mission/mission';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MissionPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +22,8 @@ import { MissionPage } from '../pages/mission/mission';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MissionPage
   ],
   providers: [
     StatusBar,
