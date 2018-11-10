@@ -7,21 +7,23 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="">
-    <div class="">
-      <div class="image">
-        <img height="50px" src="assets/imgs/logo.png" alt="" />
-        <h1>ShareKit</h1>
-      </div>
-      <p>
-        If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-      </p>
-      <div class="">
-        <button ion-button secondary (click)="loadMission()">Go to Mission</button>
-        <button ion-button primary (click)="loadBasicKit()">Go to Basic Kit</button>
-        <button ion-button (click)="loadFrequency()">Choose Refill Frequency</button>
-      </div>
-    </div>
-  </div>
+  <form style="display:flex; height: 100%; flex-direction: column;" >
+        <ion-scroll scrollY=true style="flex: 1 0 0;" >
+          <div class="">
+            <div class="image">
+              <img [ngStyle]="{'left':'50%', 'margin-left':'-50px', 'height':'100px'}"  src="assets/imgs/logo.png" alt="" />
+              <h1 color="secondary">Welcome to VidaKit</h1>
+            </div>
+            <p>
+              If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+            </p>
+          </div>
+        </ion-scroll>
+
+        <div padding>
+          <button ion-button secondary (click)="loadMission()">Go to Mission</button>
+          <button ion-button primary (click)="loadBasicKit()">Go to Basic Kit</button>
+        </div>
+    </form>
 
 </ion-content>
