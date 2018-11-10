@@ -14,12 +14,15 @@ page-home {
   h2 {
    position: absolute;
    width: 100%;
+   text-align: center;
+   display:block;
   }
 
   p{
     position: absolute;
     bottom: 10px;
   }
+
 
   img{
     position:absolute;
@@ -39,6 +42,16 @@ page-home {
    background-color: #d3d3d3;
   }
 
+  .info{
+    height: 400px;
+    position: absolute;
+    top: 700px;
+    margin: 0px 200px 0px 200px;
+    padding: 20px 0px 0px 0px;
+    line-height: 1.5;
+    background-color: #d3d3d3;
+  }
+
   .backgroundDiv{
     background-color: #ffffff;
     height: 100%;
@@ -55,7 +68,7 @@ page-home {
   .slideshowImage{
     height:400px;
     width:550px;
-    top:100px;
+    top:25px;
     margin-left:-275px;
     position:absolute;
 
