@@ -1,15 +1,11 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Basic Kit
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
 <style media="screen">
   header {
     background-color: #d3d3d3;
     padding: 35px;
-    font-size: 40px;
+    height:150px;
+    font-size: 50px;
+    font-family: "Arial";
     text-align: center;
   }
   article {
@@ -21,13 +17,35 @@
     text-indent: 120px;
     padding-left: 150px;
   }
+
+  button{
+    color:#ffffff;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .navBar{
+    position:absolute;
+    width:100%;
+    left:50%;
+    margin-left: -270px;
+  }
+
 </style>
 
 <ion-content padding>
   <div>
+
+
   <header>
     <strong>Purchase/Request Kit</strong>
   </header>
+
+  <div class="navBar" style="top:100px">
+    <button ion-button color="light" margin="100px" (click)="loadHome()">Home</button>
+    <button ion-button color="light" margin="100px" >Basic Kit</button>
+    <button ion-button margin="100px" color="light" (click)="loadMission()">Mission</button>
+  </div>
   </div>
   <br>
   <br>
@@ -58,8 +76,10 @@
       <li>Emergency ponchos</li>
       <li>Utility knife</li>
     </ul>
-  <button ion-button >Purchase</button>
-  <button ion-button >Request</button>
-  <button ion-button >Donate Two</button>
+  <button ion-button color="light">Purchase</button>
+  <button ion-button color="light">Request</button>
+  <button ion-button color="light">Donate Two</button>
 </article>
+
+
 </ion-content>

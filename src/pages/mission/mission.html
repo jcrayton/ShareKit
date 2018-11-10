@@ -1,20 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Our Mission Statement
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 
 <ion-content padding>
-  <div class="flex-container">
-    <img height="100px" src="assets/imgs/logo.png"/>
+
+  <div class="image">
+    <img [ngStyle]="{'left':'50%', 'top':'150px', 'margin-left':'-50px', 'height':'100px'}"  src="assets/imgs/logo.png" alt="" />
+
+    <h1 color="secondary">Our Mission</h1>
+      <div class="navBar" style="top:80px">
+        <button ion-button color="light" margin="100px" (click)="loadBasicKit()">Basic Kit</button>
+        <button ion-button color="light" margin="100px" >Home</button>
+        <button ion-button margin="100px" color="light" (click)="loadMission()">Mission</button>
+
+
+
+      </div>
+
+
   </div>
-  <h2>
-    We believe that everyone, reguardless of income, should be prepaired for a natural disaster.
-  </h2>
-  <p>
-    sample text
-  </p>
+
+  <div style="top:100px, position:absolute">
+    <h2>
+      We believe that everyone, reguardless of income, should be prepaired for a natural disaster.
+    </h2>
+    <p>
+      sample text
+    </p>
+  </div>
+
 </ion-content>
