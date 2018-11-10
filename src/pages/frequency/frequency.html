@@ -8,4 +8,19 @@
 
 <ion-content padding>
 
+  <div class="content">
+    <p>
+      Refill Frequency: every {{frequency}} year(s)
+    </p>
+    <ion-range min="1" max="5" step="1" snaps="true"
+              pin="true" [(ngModel)]="frequency" class="range">
+      <p range-left>
+        1 year
+      </p>
+      <p range-right>
+        5 years
+      </p>
+    </ion-range>
+  </div>
+
 </ion-content>

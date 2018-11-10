@@ -1,13 +1,85 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Basic Kit
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
+<style media="screen">
+  header {
+    background-color: #d3d3d3;
+    padding: 15px;
+    height:150px;
+    font-size: 50px;
+    font-family: "Arial";
+    text-align: center;
+  }
+  article {
+    float: right;
+    padding-right: 150px;
+  }
+  section {
+    float: left;
+    text-indent: 120px;
+    padding-left: 150px;
+  }
+
+  button{
+    color:#ffffff;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .navBar{
+    position:absolute;
+    width:100%;
+    left:50%;
+    margin-left: -270px;
+  }
+
+</style>
 
 <ion-content padding>
-  <h1>
-    Basic Kit
-  </h1>
+  <div>
+
+
+  <header>
+    <strong>Purchase/Request Kit</strong>
+  </header>
+
+  <div class="navBar" style="top:100px">
+    <button ion-button color="light" margin="100px" >Store</button>
+    <button ion-button color="light" margin="100px" (click)="loadHome()">Home</button>
+    <button ion-button margin="100px" color="light" (click)="loadMission()">Mission</button>
+  </div>
+  </div>
+  <br>
+  <br>
+  <section>
+  <div>
+    <h2><u>Basic Readiness Kit</u></h2>
+  </div>
+  <img src="../assets/imgs/basic_kit.jpg" alt="Trulli" width="500" height="333">
+  </section>
+  <article>
+  <h3>
+    <u>Contains</u>
+  </h3>
+    <ul>
+      <li>Water - 1 gallon per person per day</li>
+      <li>Water testing kit</li>
+      <li>Water purifying kit</li>
+      <li>Food (3 day supply)</li>
+      <li>Radio (NOAA)</li>
+      <li>Flashlight with backup batteries</li>
+      <li>Whistle</li>
+      <li>Dust mask</li>
+      <li>Plastic sheeting</li>
+      <li>Duct tape</li>
+      <li>Local maps</li>
+      <li>First aid kit</li>
+      <li>Emergency tent</li>
+      <li>Emergency ponchos</li>
+      <li>Utility knife</li>
+    </ul>
+  <button ion-button color="light">Purchase</button>
+  <button ion-button color="light">Request</button>
+  <button ion-button color="light">Donate Two</button>
+</article>
+
+
 </ion-content>
