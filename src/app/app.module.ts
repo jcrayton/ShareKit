@@ -14,7 +14,8 @@ import { BasicKit } from '../pages/basic-kit/basic-kit';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MissionPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +24,8 @@ import { BasicKit } from '../pages/basic-kit/basic-kit';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MissionPage
   ],
   providers: [
     StatusBar,
