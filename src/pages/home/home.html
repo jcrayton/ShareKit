@@ -1,25 +1,42 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Nameless Product
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content  style="background-color:#000000;" padding>
-  <div class="backgroundDiv" style="isplay:flex; height: 100%; flex-direction: column;" >
+<ion-content class="backgroundDiv" padding>
+  <div style="isplay:flex; height: 100%; flex-direction: column;" >
 
-            <div class="image">
-              <img [ngStyle]="{'left':'50%', 'top':'100px', 'margin-left':'-50px', 'height':'100px'}"  src="assets/imgs/logo.png" alt="" />
-              <h1 color="secondary">Welcome to VidaKit</h1>
-            </div>
-            <p>
-              If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-            </p>
-            <div>
-              <button ion-button secondary (click)="loadMission()">Go to Mission</button>
-              <button ion-button primary (click)="loadBasicKit()">Go to Basic Kit</button>
-            </div>
+      <div class="image">
+        <img [ngStyle]="{'left':'20%', 'top':'50px', 'margin-left':'-125px', 'height':'100px'}"  src="assets/imgs/vidakit_logo.png" alt="" />
+        <img [ngStyle]="{'left':'80%', 'top':'50px', 'margin-left':'-125px', 'height':'100px'}"  src="assets/imgs/vidakit_logo.png" alt="" />
+
+        <h1 color="secondary"><strong>Welcome to VidaKit</strong></h1>
+          <div class="navBar" style="top:80px">
+            <button ion-button color="light" margin="100px" (click)="loadBasicKit()">Store</button>
+            <button ion-button color="light" margin="100px" >Home</button>
+            <button ion-button margin="100px" color="light" (click)="loadMission()">Mission</button>
+          </div>
+      </div>
+      <!-- <div style="width:100%, position:absolute"> -->
+        <ion-content>
+          <ion-slides autoplay="500" loop="true" speed="3000" effect="fade">
+            <ion-slide >
+              <img class="slideshowImage" src="assets/imgs/slideshowPics/image1.jpg">
+            </ion-slide>
+            <ion-slide >
+              <img class="slideshowImage" src="assets/imgs/slideshowPics/image2.jpg">
+            </ion-slide>
+            <ion-slide >
+              <img class="slideshowImage" src="assets/imgs/slideshowPics/image3.jpg">
+            </ion-slide>
+            <ion-slide >
+              <img class="slideshowImage" src="assets/imgs/slideshowPics/image4.jpg">
+            </ion-slide>
+            <ion-slide >
+              <img class="slideshowImage" src="assets/imgs/slideshowPics/image5.jpg">
+            </ion-slide>
+            <ion-slide >
+              <img class="slideshowImage" src="assets/imgs/slideshowPics/image6.jpg">
+            </ion-slide>
+          </ion-slides>
+        </ion-content>
+      <!-- </div> -->
     </div>
 
 </ion-content>
