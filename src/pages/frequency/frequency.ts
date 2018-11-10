@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 
@@ -8,7 +8,10 @@ import { NavController } from 'ionic-angular';
 })
 export class FrequencyPage {
 
-  constructor(public navCtrl: NavController) {
+  frequency = 2;
 
+  constructor(public navCtrl: NavController) {
   }
+
+
 }
