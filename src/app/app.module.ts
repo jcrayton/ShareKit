@@ -15,7 +15,8 @@ import { BasicKit } from '../pages/basic-kit/basic-kit';
   declarations: [
     MyApp,
     HomePage,
-    MissionPage
+    MissionPage,
+    BasicKit
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,8 @@ import { BasicKit } from '../pages/basic-kit/basic-kit';
   entryComponents: [
     MyApp,
     HomePage,
-    MissionPage
+    MissionPage,
+    BasicKit
   ],
   providers: [
     StatusBar,
