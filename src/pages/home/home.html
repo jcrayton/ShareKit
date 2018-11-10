@@ -6,22 +6,20 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div class="">
-    <div class="">
-      <div class="image">
-        <img height="50px" src="assets/imgs/logo.png" alt="" />
-        <h1>ShareKit</h1>
+<ion-content  style="background-color:#000000;" padding>
+  <div class="backgroundDiv" style="isplay:flex; height: 100%; flex-direction: column;" >
 
-      </div>
-      <p>
-        If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-      </p>
-      <div class="">
-        <button ion-button secondary (click)="loadMission()">Go to Mission</button>
-        <button ion-button primary (click)="loadBasicKit()">Go to Basic Kit</button>
-      </div>
+            <div class="image">
+              <img [ngStyle]="{'left':'50%', 'top':'100px', 'margin-left':'-50px', 'height':'100px'}"  src="assets/imgs/logo.png" alt="" />
+              <h1 color="secondary">Welcome to VidaKit</h1>
+            </div>
+            <p>
+              If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+            </p>
+            <div>
+              <button ion-button secondary (click)="loadMission()">Go to Mission</button>
+              <button ion-button primary (click)="loadBasicKit()">Go to Basic Kit</button>
+            </div>
     </div>
-  </div>
 
 </ion-content>
